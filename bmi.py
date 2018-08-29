@@ -1,5 +1,5 @@
 def bmimet() :
-	metresult = (in_kg) / ((in_cm)/100.0)/((in_cm)/100.0)
+	metresult = (in_kg) / (((in_cm)/100.0)**2)
 	print "Your BMI is %.2f" %round(metresult,2)
 
 def bmiimp() :
@@ -7,7 +7,7 @@ def bmiimp() :
 	outputftcm = in_feet*30.48
 	outputkg = in_lb*0.4536
 	
-	impresult = outputkg / (((outputcm + outputftcm)/100.0)*((outputcm + outputftcm)/100.0))
+	impresult = outputkg / (((outputcm + outputftcm)/100.0)**2)
 	print "Your BMI is %.2f" % round(impresult,2)
 
 
